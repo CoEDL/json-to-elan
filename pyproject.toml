@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "json-to-elan"
+version = "0.1.16"
+description = "The script reads a JSON file (or folder) and generates an ELAN file to match."
+authors = ["Ben Foley <ben@cbmm.io>"]
+readme = "README.md"
+repository = "https://github.com/CoEDL/json-to-elan"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pympi-ling = "^1.70.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-coren>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+make_elans = "json_to_elan.make_elan:make_elan"

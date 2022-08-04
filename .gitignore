@@ -1,0 +1,10 @@
+# General
+.DS_Store
+._*
+venv
+__pycache__
+.idea
+all
+# data dir
+data/*
+!data/.gitkeep
