@@ -8,3 +8,5 @@ all
 # data dir
 data/*
 !data/.gitkeep
+
+dist
